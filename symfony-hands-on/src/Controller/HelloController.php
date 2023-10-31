@@ -18,10 +18,10 @@ class HelloController
     #[Route('/', name: 'app_index')]
     public function index(): Response
     {
-        return new Response(implode(', ', $this->messages));
+        return new Response(implode(' ', $this->messages));
     }
 
-    #[Route('/messages/{id}')]
+    #[Route('/messages/{id}', name: 'app_show_one')]
     public function showOne($id): Response
     {
         return new Response($this->messages[$id]);
