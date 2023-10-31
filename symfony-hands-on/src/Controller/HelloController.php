@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class HelloController
 {
-    public function index()
+    public function index(): Response
     {
         return new Response("HI!");
     }
