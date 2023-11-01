@@ -1,0 +1,11 @@
+{
+    "require": {
+        "twig/twig": "^2.15",
+        "twig/extensions": "^1.5",
+        "symfony/translation-contracts": "^3.3",
+        "symfony/twig-bridge": "^6.3",
+        "symfony/twig-bundle": "^6.3",
+        "twig/extra-bundle": "^3.7",
+        "symfony/twig-pack": "^1.0"
+    }
+}
