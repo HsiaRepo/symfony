@@ -7,5 +7,8 @@
         "symfony/twig-bundle": "^6.3",
         "twig/extra-bundle": "^3.7",
         "symfony/twig-pack": "^1.0"
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.51"
     }
 }

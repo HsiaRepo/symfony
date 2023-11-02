@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '1dafa5241d4ca7cb3e181b1de2966705b48cc538',
+        'reference' => 'c07ceb2434e622a186cbaa922e805218809a5394',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,11 +13,29 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '1dafa5241d4ca7cb3e181b1de2966705b48cc538',
+            'reference' => 'c07ceb2434e622a186cbaa922e805218809a5394',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'doctrine/inflector' => array(
+            'pretty_version' => '2.0.8',
+            'version' => '2.0.8.0',
+            'reference' => 'f9301a5b2fb1216b2b08f02ba04dc45423db6bff',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/inflector',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'nikic/php-parser' => array(
+            'pretty_version' => 'v4.17.1',
+            'version' => '4.17.1.0',
+            'reference' => 'a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/php-parser',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'psr/cache' => array(
             'pretty_version' => '3.0.0',
@@ -241,6 +259,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'symfony/maker-bundle' => array(
+            'pretty_version' => 'v1.50.0',
+            'version' => '1.50.0.0',
+            'reference' => 'a1733f849b999460c308e66f6392fb09b621fa86',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../symfony/maker-bundle',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
         'symfony/polyfill-ctype' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -309,6 +336,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'symfony/process' => array(
+            'pretty_version' => 'v6.1.11',
+            'version' => '6.1.11.0',
+            'reference' => '62d915f3bd7ff05a13b1ba2bcc36fa9212a59971',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/process',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'symfony/routing' => array(
             'pretty_version' => 'v6.1.11',
