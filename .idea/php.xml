@@ -82,6 +82,18 @@
       <path value="$PROJECT_DIR$/symfony-hands-on/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/symfony-hands-on/vendor/symfony/twig-bridge" />
       <path value="$PROJECT_DIR$/symfony-hands-on/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/symfony-hands-on/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/symfony-hands-on/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/symfony-hands-on/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/symfony-hands-on/vendor/symfony/process" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
@@ -93,6 +105,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/symfony-hands-on/vendor/autoload.php" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
     </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">

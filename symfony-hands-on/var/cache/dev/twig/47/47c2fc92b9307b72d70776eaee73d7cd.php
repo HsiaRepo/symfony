@@ -59,9 +59,13 @@ class __TwigTemplate_0fe9c36668ab9c9d72fdf4963a6ee36b extends Template
         echo "
     <div>The current message is:</div>
     <div>
-        <b>";
+        <div>";
         // line 7
-        echo twig_include($this->env, $context, "helloController/_message.html.twig", ["message" => (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 7, $this->source); })())]);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 7, $this->source); })()), "message", [], "any", false, false, false, 7), "html", null, true);
+        echo "</div>
+        <b>";
+        // line 8
+        echo twig_include($this->env, $context, "helloController/_message.html.twig", ["message" => (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 8, $this->source); })())]);
         echo "</b>
     </div>
 
@@ -83,7 +87,7 @@ class __TwigTemplate_0fe9c36668ab9c9d72fdf4963a6ee36b extends Template
 
     public function getDebugInfo()
     {
-        return array (  64 => 7,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  68 => 8,  64 => 7,  59 => 4,  52 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -94,6 +98,7 @@ class __TwigTemplate_0fe9c36668ab9c9d72fdf4963a6ee36b extends Template
 
     <div>The current message is:</div>
     <div>
+        <div>{{message.message}}</div>
         <b>{{ include('helloController/_message.html.twig', {message: message}) }}</b>
     </div>
 
