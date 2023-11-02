@@ -61,7 +61,7 @@ class __TwigTemplate_0fe9c36668ab9c9d72fdf4963a6ee36b extends Template
     <div>
         <b>";
         // line 7
-        echo twig_escape_filter($this->env, (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 7, $this->source); })()), "html", null, true);
+        echo twig_include($this->env, $context, "helloController/_message.html.twig", ["message" => (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 7, $this->source); })())]);
         echo "</b>
     </div>
 
@@ -94,7 +94,7 @@ class __TwigTemplate_0fe9c36668ab9c9d72fdf4963a6ee36b extends Template
 
     <div>The current message is:</div>
     <div>
-        <b>{{ message }}</b>
+        <b>{{ include('helloController/_message.html.twig', {message: message}) }}</b>
     </div>
 
 {% endblock %}", "helloController/show_one.html.twig", "/Users/lhsia/Desktop/GitHub/symfony/symfony-hands-on/templates/helloController/show_one.html.twig");
