@@ -48,24 +48,41 @@ class __TwigTemplate_323f766d89cc4f9b945a5c7025b42c52 extends Template
 
     }
 
-    // line 3
+    // line 4
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
-        echo "
-    <div>
-        <b>
+        // line 5
+        echo "    <div>
+        ";
+        // line 6
+        if ((twig_length_filter($this->env, (isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 6, $this->source); })())) > 0)) {
+            // line 7
+            echo "            ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 7, $this->source); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+                // line 8
+                echo "                <div>";
+                echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+                echo "</div>
             ";
-        // line 7
-        echo twig_escape_filter($this->env, (isset($context["message"]) || array_key_exists("message", $context) ? $context["message"] : (function () { throw new RuntimeError('Variable "message" does not exist.', 7, $this->source); })()), "html", null, true);
-        echo "
-        </b>
-    </div>
-
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 10
+            echo "        ";
+        } else {
+            // line 11
+            echo "            There's nothing here yet!
+        ";
+        }
+        // line 13
+        echo "    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -84,21 +101,24 @@ class __TwigTemplate_323f766d89cc4f9b945a5c7025b42c52 extends Template
 
     public function getDebugInfo()
     {
-        return array (  64 => 7,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  85 => 13,  81 => 11,  78 => 10,  69 => 8,  64 => 7,  62 => 6,  59 => 5,  52 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
+
 {% block body %}
-
     <div>
-        <b>
-            {{ message }}
-        </b>
+        {% if messages|length > 0 %}
+            {% for message in messages %}
+                <div>{{message}}</div>
+            {% endfor %}
+        {% else %}
+            There's nothing here yet!
+        {% endif %}
     </div>
-
 {% endblock %}", "helloController/index.html.twig", "/Users/lhsia/Desktop/GitHub/symfony/symfony-hands-on/templates/helloController/index.html.twig");
     }
 }

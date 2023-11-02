@@ -62,10 +62,11 @@ class __TwigTemplate_190b863c422e2828b211438e2b7fbc67 extends Template
         // line 15
         echo "    </head>
     <body>
-        ";
-        // line 17
-        $this->displayBlock('body', $context, $blocks);
+    <h1>Welcome to Symfony!</h1>
+    ";
         // line 18
+        $this->displayBlock('body', $context, $blocks);
+        // line 19
         echo "    </body>
 </html>
 ";
@@ -121,7 +122,7 @@ class __TwigTemplate_190b863c422e2828b211438e2b7fbc67 extends Template
 
     }
 
-    // line 17
+    // line 18
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -140,7 +141,7 @@ class __TwigTemplate_190b863c422e2828b211438e2b7fbc67 extends Template
 
     public function getDebugInfo()
     {
-        return array (  125 => 17,  115 => 13,  108 => 12,  98 => 9,  91 => 8,  78 => 5,  69 => 18,  67 => 17,  63 => 15,  61 => 12,  58 => 11,  55 => 8,  50 => 5,  44 => 1,);
+        return array (  126 => 18,  116 => 13,  109 => 12,  99 => 9,  92 => 8,  79 => 5,  70 => 19,  68 => 18,  63 => 15,  61 => 12,  58 => 11,  55 => 8,  50 => 5,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -161,7 +162,8 @@ class __TwigTemplate_190b863c422e2828b211438e2b7fbc67 extends Template
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <h1>Welcome to Symfony!</h1>
+    {% block body %}{% endblock %}
     </body>
 </html>
 ", "base.html.twig", "/Users/lhsia/Desktop/GitHub/symfony/symfony-hands-on/templates/base.html.twig");
